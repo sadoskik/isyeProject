@@ -2,15 +2,15 @@
 title: "R Notebook"
 output: html_notebook
 ---
+This normalized the percentages given into numeric decimals.
+```{r}
+flavors_of_cacao$`Cocoa Percent` = as.numeric(sub("%","",flavors_of_cacao$`Cocoa Percent`))/100
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+```
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+As can be seen in this plot, 
 
 ```{r}
-flavors_of_cacao$`Cocoa
-Percent` = as.numeric(sub("%","",flavors_of_cacao$`Cocoa
-Percent`))/100
 plot(flavors_of_cacao$`Cocoa
 Percent`, flavors_of_cacao$Rating)
 ```
