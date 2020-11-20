@@ -12,7 +12,7 @@ As can be seen in this plot, there is not a simple correlation between cocoa per
 
 ```{r}
 plot(flavors_of_cacao$`Cocoa
-Percent`, flavors_of_cacao$Rating)
+Percent`, flavors_of_cacao$Rating, xlab="Cocoa Percentage", ylab="Rating", main = "All Data")
 ```
 
 We could possibly hone in on company/location specific characteristics though. Here it could be argued that midrange cocoa percentages fair better than their extremes?
