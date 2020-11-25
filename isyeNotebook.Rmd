@@ -32,5 +32,12 @@ subSwiss = subset(flavors_of_cacao, flavors_of_cacao$`Company
 Location` == "Switzerland")
 plot(subSwiss$`Cocoa
 Percent`, subSwiss$Rating, xlab="Cocao Percentage", ylab="Rating", main ="Swiss Based Chocolate Companies")
+
+hist(subSwiss$`Cocoa
+Percent`, weight)
+```
+
+```{r}
+
 ```
 
