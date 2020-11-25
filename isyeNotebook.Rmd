@@ -7,6 +7,17 @@ This normalized the percentages given into numeric decimals.
 flavors_of_cacao$`Cocoa Percent` = as.numeric(sub("%","",flavors_of_cacao$`Cocoa Percent`))/100
 
 ```
+Below we can see that at least the cocoa percentage data is normally distributed
+```{r}
+hist(flavors_of_cacao$`Cocoa
+Percent`, xlab="Cocoa Percentage", main = "Cocoa Percentage over all Data")
+```
+
+And the rating is skewed left with what could be interpreted as a normal distribution
+```{r}
+hist(flavors_of_cacao$Rating, xlab="Ratings", main="Rating distribution over all data")
+```
+
 
 As can be seen in this plot, there is not a simple correlation between cocoa percentage and the rating.
 
